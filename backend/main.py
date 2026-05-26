@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from api.predict import router as predict_router
@@ -22,7 +26,7 @@ app.include_router(chat_router, prefix="/api")
 
 @app.get("/")
 def root():
-    return {"message": "Real Estate Price Estimator API is running! 🏠"}
+    return {"message": "Real Estate Price Estimator API is running!"}
 
 @app.get("/health")
 def health():
