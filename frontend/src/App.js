@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const API = "http://127.0.0.1:8000/api";
+const API = "https://realestate-estimator.onrender.com/api";
 
 export default function App() {
   const [form, setForm] = useState({
