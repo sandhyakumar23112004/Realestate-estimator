@@ -103,7 +103,7 @@ export default function App() {
             ))}
           </div>
           <button style={s.btn} onClick={predict} disabled={loading}>
-            {loading ? "Estimating..." : "Estimate Price"}
+            {loading ? "⏳ Estimating..." : "🔍 Estimate Price"}
           </button>
 
           {result && (
